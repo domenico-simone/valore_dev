@@ -8,5 +8,7 @@ RUN install2.r --error \
     formatR \
     remotes \
     selectr \
-    caTools \
+    caTools
+
+RUN install2.r --error \
     BiocManager
