@@ -8,7 +8,10 @@ RUN install2.r --error \
     formatR \
     remotes \
     selectr \
-    caTools
+    caTools \
+    littler
 
 RUN install2.r --error \
     BiocManager
+
+RUN /usr/local/lib/R/site-library/littler/examples/installBioc.r phyloseq
