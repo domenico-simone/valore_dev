@@ -12,3 +12,7 @@ RUN install2.r --error \
 
 RUN install2.r --error \
     BiocManager
+
+RUN R -q -e "BiocManager::install('phyloseq')"
+
+#RUN /usr/local/lib/R/site-library/littler/examples/installBioc.r phyloseq
